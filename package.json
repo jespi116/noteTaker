@@ -1,0 +1,23 @@
+{
+  "name": "noteTaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jespi116/noteTaker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jespi116/noteTaker/issues"
+  },
+  "homepage": "https://github.com/jespi116/noteTaker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
