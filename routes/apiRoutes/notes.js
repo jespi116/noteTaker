@@ -37,7 +37,6 @@ router.get('/notes', (req, res) => {
 
 router.delete('/notes/:id', (req, res) => {
     const note = findById(req.params.id, notes);
-    console.log(note);
     
     notes = notes.filter(data => data.id !== note.id);
     for(let i=0; i < notes.length; i++){
