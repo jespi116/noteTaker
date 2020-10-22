@@ -1,34 +1,19 @@
 {
   "notes": [
     {
-      "title": "Test Title",
-      "text": "Test text",
+      "title": "This is a note",
+      "text": "This is note text",
       "id": "0"
     },
     {
-      "title": "Test Title2",
-      "text": "Test text2",
+      "title": "Also a note",
+      "text": "more note text",
       "id": "1"
     },
     {
-      "title": "poop",
-      "text": "poopy",
+      "title": "Guess what?",
+      "text": "This is a note too 😜🤯",
       "id": "2"
-    },
-    {
-      "title": "poop2",
-      "text": "poopy2",
-      "id": "3"
-    },
-    {
-      "title": "title",
-      "text": "texty",
-      "id": "4"
-    },
-    {
-      "title": "Titley",
-      "text": "poooop",
-      "id": "5"
     }
   ]
 }

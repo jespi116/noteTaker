@@ -31,7 +31,7 @@ const getNotes = () =>
     headers: {
       'Content-Type': 'application/json',
     },
-  });
+});
 
 const saveNote = (note) =>
   fetch('/api/notes', {
@@ -40,7 +40,7 @@ const saveNote = (note) =>
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(note),
-  });
+});
 
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
@@ -48,19 +48,23 @@ const deleteNote = (id) =>
     headers: {
       'Content-Type': 'application/json',
     },
-  });
+});
 
 const renderActiveNote = () => {
   hide(saveNoteBtn);
-
+// previous note appears in a state in which it cannot be edited.
   if (activeNote.id) {
     noteTitle.setAttribute('readonly', true);
     noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
-    noteText.value = activeNote.title;
-  } else {
+    noteText.value = activeNote.text;
+  } 
+// clears input and textarea area's and allows the user to create a new note
+  else {
     noteTitle.value = '';
     noteText.value = '';
+    noteTitle.removeAttribute('readonly', true);
+    noteText.removeAttribute('readonly', true);
   }
 };
 
@@ -86,6 +90,8 @@ const handleNoteDelete = (e) => {
   if (activeNote.id === noteId) {
     activeNote = {};
   }
+
+  console.log(noteId)
 
   deleteNote(noteId).then(() => {
     getAndRenderNotes();

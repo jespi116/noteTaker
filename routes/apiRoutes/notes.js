@@ -1,7 +1,12 @@
 const router = require('express').Router();
 const path = require('path');
 const fs = require('fs');
-const { notes } = require('../../db/db.json');
+let { notes } = require('../../db/db.json');
+
+function findById(id, notesArray) {
+    const result = notesArray.filter(note => note.id === id)[0];
+    return result;
+}
 
 function validateNote(note) {
     if(!note.title || typeof note.title !== 'string'){
@@ -28,6 +33,23 @@ function createNewNote(body, notesArray) {
 router.get('/notes', (req, res) => {
     
     res.json(notes)
+});
+
+router.delete('/notes/:id', (req, res) => {
+    const note = findById(req.params.id, notes);
+    console.log(note);
+    
+    notes = notes.filter(data => data.id !== note.id);
+    for(let i=0; i < notes.length; i++){
+        notes[i].id = i.toString();
+    }
+
+    fs.writeFileSync(
+        path.join(__dirname, '../../db/db.json'),
+        JSON.stringify({ notes: notes}, null, 2)
+    );
+
+    return res.status(200).json(notes);
 });
 
 router.post('/notes', (req, res) => {
