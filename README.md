@@ -1,10 +1,16 @@
 
 # Note Taker
 
-![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)<br>
+![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+
 ## Description:<br>
 This project utilizes express.js to deliver backend functionality to a fleshed out front end webpage. The user is able to write, store and delete notes on to a JSON file on the back end, therefore, the user will never have to worry about losing their data!<br><br>
-## Table of Contents<br>[Installation](#installation)<br>[Usage](#usage)<br>[License](#license)<br>[Questions](#questions)<br><br>
+
+## Table of Contents<br>[Installation](#installation)<br>[Usage](#usage)<br>[License](#license)<br>[Questions](#questions)<br>[Screenshot](#screenshot)<br><br>
+
+
+
 ## Installation:
 
 To install necessary depenecies, run the following command:
@@ -27,3 +33,6 @@ This project is licensed under the MIT license.
 ## Questions:
 
 If you have any questions about the repo, open an issue or contact me directly at Jespi116@fiu.edu. you can find more of my work at [Jespi116](https://github.com/Jespi116)
+
+## Screenshot:
+![](screenshot.png)
