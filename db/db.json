@@ -1,1 +1,34 @@
-[{"title":"Test Title","text":"Test text"}]
+{
+  "notes": [
+    {
+      "title": "Test Title",
+      "text": "Test text",
+      "id": "0"
+    },
+    {
+      "title": "Test Title2",
+      "text": "Test text2",
+      "id": "1"
+    },
+    {
+      "title": "poop",
+      "text": "poopy",
+      "id": "2"
+    },
+    {
+      "title": "poop2",
+      "text": "poopy2",
+      "id": "3"
+    },
+    {
+      "title": "title",
+      "text": "texty",
+      "id": "4"
+    },
+    {
+      "title": "Titley",
+      "text": "poooop",
+      "id": "5"
+    }
+  ]
+}
